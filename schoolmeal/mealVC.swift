@@ -101,6 +101,11 @@ class mealVC: UITableViewController {
         }
     }
     
+    @IBAction func infobtn(_ sender: Any) {
+        let info = storyboard?.instantiateViewController(withIdentifier: "info")
+        present(info!, animated: true)
+    }
+    
 
 
     /*

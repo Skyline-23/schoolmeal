@@ -101,7 +101,11 @@ class tomorrowmealVC: UITableViewController {
         }
     }
     
-
+    @IBAction func infobtn(_ sender: Any) {
+        let info = storyboard?.instantiateViewController(withIdentifier: "info")
+        present(info!, animated: true)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
