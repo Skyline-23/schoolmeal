@@ -3,29 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620074E2256E213B001214EB /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 620074E1256E213B001214EB /* loading.json */; };
+		621FD83B256A54D5000CDFAE /* mealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FD83A256A54D5000CDFAE /* mealVC.swift */; };
+		621FD83F256A84FA000CDFAE /* tabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FD83E256A84FA000CDFAE /* tabVC.swift */; };
+		621FD847256A862F000CDFAE /* yesterdaymealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FD846256A862F000CDFAE /* yesterdaymealVC.swift */; };
+		621FD84A256A868C000CDFAE /* tomorrowmealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621FD849256A868C000CDFAE /* tomorrowmealVC.swift */; };
+		627F6DE0256D1A07003D11E5 /* firstcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F6DDF256D1A07003D11E5 /* firstcell.swift */; };
+		627F6DE4256D21E8003D11E5 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F6DE3256D21E8003D11E5 /* cell.swift */; };
 		62BE849F25695D9600E5422F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE849E25695D9600E5422F /* AppDelegate.swift */; };
 		62BE84A125695D9600E5422F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE84A025695D9600E5422F /* SceneDelegate.swift */; };
-		62BE84A325695D9600E5422F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE84A225695D9600E5422F /* ViewController.swift */; };
 		62BE84A625695D9600E5422F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62BE84A425695D9600E5422F /* Main.storyboard */; };
 		62BE84A925695D9600E5422F /* schoolmeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62BE84A725695D9600E5422F /* schoolmeal.xcdatamodeld */; };
 		62BE84AB25695D9600E5422F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62BE84AA25695D9600E5422F /* Assets.xcassets */; };
 		62BE84AE25695D9600E5422F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62BE84AC25695D9600E5422F /* LaunchScreen.storyboard */; };
+		7D49641AD3C602BA9516B501 /* Pods_schoolmeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9857E905E4145D0D22C0263E /* Pods_schoolmeal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1736C74E79209D7F89D9571B /* Pods-schoolmeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolmeal.debug.xcconfig"; path = "Target Support Files/Pods-schoolmeal/Pods-schoolmeal.debug.xcconfig"; sourceTree = "<group>"; };
+		620074E1256E213B001214EB /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		621FD83A256A54D5000CDFAE /* mealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealVC.swift; sourceTree = "<group>"; };
+		621FD83E256A84FA000CDFAE /* tabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabVC.swift; sourceTree = "<group>"; };
+		621FD846256A862F000CDFAE /* yesterdaymealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yesterdaymealVC.swift; sourceTree = "<group>"; };
+		621FD849256A868C000CDFAE /* tomorrowmealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomorrowmealVC.swift; sourceTree = "<group>"; };
+		627F6DDF256D1A07003D11E5 /* firstcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstcell.swift; sourceTree = "<group>"; };
+		627F6DE3256D21E8003D11E5 /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
 		62BE849B25695D9600E5422F /* schoolmeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schoolmeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BE849E25695D9600E5422F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62BE84A025695D9600E5422F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62BE84A225695D9600E5422F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		62BE84A525695D9600E5422F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62BE84A825695D9600E5422F /* schoolmeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = schoolmeal.xcdatamodel; sourceTree = "<group>"; };
 		62BE84AA25695D9600E5422F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62BE84AD25695D9600E5422F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62BE84AF25695D9600E5422F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B45D09A408FCDB029BD26D1 /* Pods-schoolmeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schoolmeal.release.xcconfig"; path = "Target Support Files/Pods-schoolmeal/Pods-schoolmeal.release.xcconfig"; sourceTree = "<group>"; };
+		9857E905E4145D0D22C0263E /* Pods_schoolmeal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schoolmeal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D49641AD3C602BA9516B501 /* Pods_schoolmeal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12DB484C1825EEAABC7CC62A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9857E905E4145D0D22C0263E /* Pods_schoolmeal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F2E14DFA66C5221B9CA26D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1736C74E79209D7F89D9571B /* Pods-schoolmeal.debug.xcconfig */,
+				6B45D09A408FCDB029BD26D1 /* Pods-schoolmeal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		620074E0256E210F001214EB /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		627F6DDE256D19E0003D11E5 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				627F6DDF256D1A07003D11E5 /* firstcell.swift */,
+				627F6DE3256D21E8003D11E5 /* cell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		62BE849225695D9600E5422F = {
 			isa = PBXGroup;
 			children = (
 				62BE849D25695D9600E5422F /* schoolmeal */,
 				62BE849C25695D9600E5422F /* Products */,
+				3F2E14DFA66C5221B9CA26D6 /* Pods */,
+				12DB484C1825EEAABC7CC62A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +110,15 @@
 		62BE849D25695D9600E5422F /* schoolmeal */ = {
 			isa = PBXGroup;
 			children = (
+				620074E1256E213B001214EB /* loading.json */,
+				620074E0256E210F001214EB /* Lottie */,
+				627F6DDE256D19E0003D11E5 /* cells */,
 				62BE849E25695D9600E5422F /* AppDelegate.swift */,
 				62BE84A025695D9600E5422F /* SceneDelegate.swift */,
-				62BE84A225695D9600E5422F /* ViewController.swift */,
+				621FD83A256A54D5000CDFAE /* mealVC.swift */,
+				621FD846256A862F000CDFAE /* yesterdaymealVC.swift */,
+				621FD849256A868C000CDFAE /* tomorrowmealVC.swift */,
+				621FD83E256A84FA000CDFAE /* tabVC.swift */,
 				62BE84A425695D9600E5422F /* Main.storyboard */,
 				62BE84AA25695D9600E5422F /* Assets.xcassets */,
 				62BE84AC25695D9600E5422F /* LaunchScreen.storyboard */,
@@ -77,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62BE84B225695D9600E5422F /* Build configuration list for PBXNativeTarget "schoolmeal" */;
 			buildPhases = (
+				CF2D7F9A876CBE9274B4DB09 /* [CP] Check Pods Manifest.lock */,
 				62BE849725695D9600E5422F /* Sources */,
 				62BE849825695D9600E5422F /* Frameworks */,
 				62BE849925695D9600E5422F /* Resources */,
+				AB66D96E0589A5DF1983A21D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BE84AE25695D9600E5422F /* LaunchScreen.storyboard in Resources */,
+				620074E2256E213B001214EB /* loading.json in Resources */,
 				62BE84AB25695D9600E5422F /* Assets.xcassets in Resources */,
 				62BE84A625695D9600E5422F /* Main.storyboard in Resources */,
 			);
@@ -135,14 +196,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB66D96E0589A5DF1983A21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schoolmeal/Pods-schoolmeal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schoolmeal/Pods-schoolmeal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schoolmeal/Pods-schoolmeal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2D7F9A876CBE9274B4DB09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-schoolmeal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62BE849725695D9600E5422F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62BE84A325695D9600E5422F /* ViewController.swift in Sources */,
+				621FD84A256A868C000CDFAE /* tomorrowmealVC.swift in Sources */,
+				621FD83F256A84FA000CDFAE /* tabVC.swift in Sources */,
+				627F6DE0256D1A07003D11E5 /* firstcell.swift in Sources */,
+				621FD83B256A54D5000CDFAE /* mealVC.swift in Sources */,
+				621FD847256A862F000CDFAE /* yesterdaymealVC.swift in Sources */,
 				62BE849F25695D9600E5422F /* AppDelegate.swift in Sources */,
 				62BE84A925695D9600E5422F /* schoolmeal.xcdatamodeld in Sources */,
+				627F6DE4256D21E8003D11E5 /* cell.swift in Sources */,
 				62BE84A125695D9600E5422F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +395,7 @@
 		};
 		62BE84B325695D9600E5422F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1736C74E79209D7F89D9571B /* Pods-schoolmeal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +415,7 @@
 		};
 		62BE84B425695D9600E5422F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B45D09A408FCDB029BD26D1 /* Pods-schoolmeal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
