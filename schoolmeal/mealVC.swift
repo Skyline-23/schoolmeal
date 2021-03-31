@@ -1,5 +1,5 @@
 //
-//  mealVC.swift
+//  yesterdaymealVC.swift
 //  schoolmeal
 //
 //  Created by 김부성 on 11/22/20.
@@ -8,10 +8,12 @@
 import UIKit
 import Alamofire
 import Lottie
+import SwiftyJSON
 
 class mealVC: UITableViewController {
-    var meal: NSArray = []
-    var menu: NSArray = []
+    var meal : [String] = []
+    var menu : [String] = []
+    var formatter = DateFormatter()
     
     lazy var animationview: AnimationView = {
         //로티 애니메이션을 만듬
@@ -33,8 +35,10 @@ class mealVC: UITableViewController {
         super.viewDidLoad()
         // subview에 로딩추가
         self.view.addSubview(self.animationview)
+        formatter.dateFormat = "YYYYMMdd"
+        let date = formatter.string(from: Date())
         // 네트워크 실행
-        network()
+        network(todaydate: date)
         // 셀 선택을 막음
         self.tableView.allowsSelection = false
     }
@@ -49,8 +53,8 @@ class mealVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        self.menu = (self.meal[section] as! NSString).components(separatedBy: "<br/>") as NSArray
-        return menu.count + 1
+        let menuName = (self.meal[section]).components(separatedBy: "<br/>")
+        return menuName.count + 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,8 +66,10 @@ class mealVC: UITableViewController {
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! cell
-            self.menu = (self.meal[indexPath.section] as! NSString).components(separatedBy: "<br/>") as NSArray
-            cell.menulbl.text = menu[indexPath.row - 1] as? String
+            let menuName = (self.meal[indexPath.section]).components(separatedBy: "<br/>")
+            self.menu = []
+            self.menu.append(contentsOf: menuName)
+            cell.menulbl.text = menu[indexPath.row - 1]
             return cell
         }
         
@@ -77,20 +83,23 @@ class mealVC: UITableViewController {
         return 44.0
     }
     
-    func network() {
-        let request = AF.request("https://babserver.herokuapp.com/todaybab")
+    func network(todaydate: String) {
+        let request = AF.request("https://open.neis.go.kr/hub/mealServiceDietInfo?Type=json&pIndex=1&pSize=100&ATPT_OFCDC_SC_CODE=D10&SD_SCHUL_CODE=7240454&MLSV_YMD=\(todaydate)")
         request.responseJSON{ response in
             switch response.result {
             case.success(let result):
-                if let value = result as? NSDictionary {
-                    let data = value["data"] as! NSDictionary
-                    self.meal = data["meal"] as! NSArray
-                    // 테이블 다시 로드
-                    self.tableView.reloadData()
-                    // lottie 중지 및 뷰에서 삭제
-                    self.animationview.stop()
-                    self.animationview.removeFromSuperview()
+                let json = JSON(result)
+                print(json)
+                let data = json["mealServiceDietInfo"].arrayValue
+                let row = data[1]["row"]
+                for index in 0...2 {
+                    self.meal.append(row[index]["DDISH_NM"].string ?? "급식이 없습니다.")
                 }
+                // 테이블 다시 로드
+                self.tableView.reloadData()
+                // lottie 중지 및 뷰에서 삭제
+                self.animationview.stop()
+                self.animationview.removeFromSuperview()
             case.failure(let error):
                 print(error)
                 let alert = UIAlertController(title: "네트워크 오류", message: "네트워크를 다시 확인해 주세요!", preferredStyle: .alert)
@@ -106,7 +115,6 @@ class mealVC: UITableViewController {
         present(info!, animated: true)
     }
     
-
 
     /*
     // Override to support conditional editing of the table view.
@@ -124,7 +132,7 @@ class mealVC: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
