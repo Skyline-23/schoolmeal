@@ -33,6 +33,9 @@ class mealVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         // subview에 로딩추가
         self.view.addSubview(self.animationview)
         formatter.dateFormat = "YYYYMMdd"
