@@ -33,6 +33,11 @@ class mealVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTable(_:)), name: .updateTable, object: nil)
+    }
+    
+    @objc func updateTable(_ notification: Notification) {
+        network(todaydate: notification.object as! String)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +50,8 @@ class mealVC: UITableViewController {
         // 셀 선택을 막음
         self.tableView.allowsSelection = false
     }
+    
+    
 
     // MARK: - Table view data source
 
@@ -93,6 +100,7 @@ class mealVC: UITableViewController {
             case.success(let result):
                 let json = JSON(result)
                 print(json)
+                self.meal = []
                 let data = json["mealServiceDietInfo"].arrayValue
                 let row = data[1]["row"]
                 for index in 0...2 {

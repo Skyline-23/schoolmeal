@@ -11,6 +11,7 @@ class MainVC: UIViewController {
 
     @IBOutlet weak var mealView: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    var formatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,9 @@ class MainVC: UIViewController {
     }
     
     @IBAction func dateChanged(_ sender: UIDatePicker) {
-        
+        formatter.dateFormat = "YYYYMMdd"
+        let date = formatter.string(from: datePicker.date)
+        NotificationCenter.default.post(name: .updateTable, object: date)
     }
     
     /*
@@ -31,4 +34,8 @@ class MainVC: UIViewController {
     }
     */
 
+}
+
+extension Notification.Name {
+    static let updateTable = Notification.Name("updateTable")
 }
