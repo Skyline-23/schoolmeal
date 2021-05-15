@@ -108,12 +108,6 @@
                                                     <action selector="dateChanged:" destination="LDi-3H-q6a" eventType="valueChanged" id="p9X-N2-cJP"/>
                                                 </connections>
                                             </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 지정된 고등학교 : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcG-UN-4qi">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜선택 : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2v-XC-coM">
                                                 <rect key="frame" x="93" y="114" width="84" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -124,11 +118,8 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="4BT-Yx-tCO" firstAttribute="centerX" secondItem="ij7-gv-z2G" secondAttribute="centerX" constant="40" id="0Ns-ED-OPE"/>
-                                            <constraint firstItem="mcG-UN-4qi" firstAttribute="leading" secondItem="ij7-gv-z2G" secondAttribute="leading" id="88a-n3-pzd"/>
                                             <constraint firstItem="C2v-XC-coM" firstAttribute="centerY" secondItem="ij7-gv-z2G" secondAttribute="centerY" id="9RI-wG-CuL"/>
-                                            <constraint firstItem="mcG-UN-4qi" firstAttribute="top" secondItem="ij7-gv-z2G" secondAttribute="top" id="Biy-8u-nrM"/>
                                             <constraint firstItem="4BT-Yx-tCO" firstAttribute="centerY" secondItem="ij7-gv-z2G" secondAttribute="centerY" id="GOB-1J-xzv"/>
-                                            <constraint firstAttribute="trailing" secondItem="mcG-UN-4qi" secondAttribute="trailing" id="Rfs-LU-qUR"/>
                                             <constraint firstItem="C2v-XC-coM" firstAttribute="centerX" secondItem="ij7-gv-z2G" secondAttribute="centerX" constant="-60" id="jHn-q2-HJH"/>
                                         </constraints>
                                     </view>
