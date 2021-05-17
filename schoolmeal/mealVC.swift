@@ -99,12 +99,18 @@ class mealVC: UITableViewController {
             switch response.result {
             case.success(let result):
                 let json = JSON(result)
-                print(json)
                 self.meal = []
-                let data = json["mealServiceDietInfo"].arrayValue
-                let row = data[1]["row"]
-                for index in 0...2 {
-                    self.meal.append(row[index]["DDISH_NM"].string ?? "급식이 없습니다.")
+                if json["RESULT"]["CODE"] == "INFO-200" {
+                    for _ in 0...2 {
+                        self.meal.append("급식이 없습니다.")
+                    }
+                }
+                else {
+                    let data = json["mealServiceDietInfo"].arrayValue
+                    let row = data[1]["row"]
+                    for index in 0...2 {
+                        self.meal.append(row[index]["DDISH_NM"].string ?? "급식이 없습니다.")
+                    }
                 }
                 // 테이블 다시 로드
                 self.tableView.reloadData()

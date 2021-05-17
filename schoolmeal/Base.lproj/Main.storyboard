@@ -115,7 +115,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="4BT-Yx-tCO" firstAttribute="centerX" secondItem="ij7-gv-z2G" secondAttribute="centerX" constant="40" id="0Ns-ED-OPE"/>
                                             <constraint firstItem="C2v-XC-coM" firstAttribute="centerY" secondItem="ij7-gv-z2G" secondAttribute="centerY" id="9RI-wG-CuL"/>
@@ -278,6 +277,7 @@
                                         <constraint firstItem="zjv-bj-kYk" firstAttribute="top" secondItem="A67-1O-Isp" secondAttribute="top" id="ubf-r5-ItY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="timelbl" destination="zjv-bj-kYk" id="r3c-7J-E9N"/>
                                 </connections>
